@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>页面加载定时器的进度条</title>
+	    <style>
+	    	*{
+	    		margin:0;
+	    		padding:0;
+	    	}
+	    	.loading{
+	    		width:100%;
+	    		height:100%;
+	    		position: absolute;
+	    		top:0;
+	    		left:0;
+	    		z-index: 100;
+	    		background: #fff;
+	    		/*https://icons8.com/preloaders/en/circular*/
+	    	}
+	    	.pic{
+	    		width:64px;
+	    		height:64px;
+	    		background: url(images/771.gif);
+	    		position: absolute;
+	    		top:0;
+	    		left:0;
+	    		bottom: 0;
+	    		right: 0;
+	    		margin:auto;
+	    	}
+	    </style>
+	     <script src="js/jquery.min.js"></script>
+	     <script>
+	     	$(function(){
+	     		setInterval(function(){
+	     			$('.loading').fadeOut();
+	     		},3000)
+	     	})
+	     </script>
+	</head>
+	<body>
+		<div class="loading">
+			<div class="pic"></div>
+		</div>
+				<img class="s-news-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515234681383&di=98c171501f64a75ef75dd9d2b849e91c&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201411%2F29%2F20141129190908_GnjJY.jpeg" >
+		<img class="s-news-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515234681383&di=98c171501f64a75ef75dd9d2b849e91c&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201411%2F29%2F20141129190908_GnjJY.jpeg" >
+		<img class="s-news-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515234681383&di=98c171501f64a75ef75dd9d2b849e91c&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201411%2F29%2F20141129190908_GnjJY.jpeg">
+	</body>
+
+</html>
